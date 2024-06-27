@@ -98,7 +98,6 @@ export default {
     },
     // 分页加载表格数据
     load() {
-
       request.post(baseUrl + "page?pageNum=" + this.pageNum, this.search).then(res => {
         if (res.code === '0') {
           this.tableData = res.data.list;
@@ -138,7 +137,6 @@ export default {
           if (res.code === '0') {
             this.$notify.success('更新成功');
             this.dialogVisible = false;
-
             this.load();
           } else {
             this.$notify.error(res.msg);

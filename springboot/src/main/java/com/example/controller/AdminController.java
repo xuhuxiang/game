@@ -12,6 +12,7 @@ import javax.annotation.Resource;
 /**
 * 管理员相关接口
 */
+@CrossOrigin(origins = {"http://114.55.219.66:8081", "null"})
 @RestController
 @RequestMapping(value = "/admin")
 public class AdminController {

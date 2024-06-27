@@ -11,6 +11,7 @@ import javax.annotation.Resource;
 /**
 * 用户相关接口
 */
+@CrossOrigin(origins = {"http://114.55.219.66:8081", "null"})
 @RestController
 @RequestMapping(value = "/user")
 public class UserController {

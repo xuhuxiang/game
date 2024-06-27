@@ -13,6 +13,8 @@ import java.util.stream.Collectors;
 /**
 * 商品管理相关接口
 */
+
+@CrossOrigin(origins = {"http://114.55.219.66:8081", "null"})
 @RestController
 @RequestMapping(value = "/goods")
 public class GoodsController {

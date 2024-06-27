@@ -16,6 +16,7 @@ import java.util.*;
 /**
  * 系统用户操作相关接口
  */
+@CrossOrigin(origins = {"http://114.55.219.66:8081", "null"})
 @RestController
 public class AccountController {
 

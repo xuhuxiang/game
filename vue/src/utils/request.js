@@ -17,7 +17,7 @@ request.interceptors.request.use(config => {
     if (token) {
         config.headers['token'] = token;
     }
-    
+
     // config.headers['token'] = user.token;  // 设置请求头
     return config
 }, error => {
@@ -36,7 +36,7 @@ request.interceptors.response.use(
         }
         // 当权限验证不通过的时候跳转到登录页面
         if (res.code === '401') {
-            router.push("/login").catch(() => {})
+            router.push("/login").catch(() => { })
         }
         return res;
     },

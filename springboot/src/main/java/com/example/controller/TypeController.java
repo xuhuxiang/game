@@ -11,6 +11,7 @@ import javax.annotation.Resource;
 /**
 *  游戏分类相关接口
 */
+@CrossOrigin(origins = {"http://114.55.219.66:8081", "null"})
 @RestController
 @RequestMapping(value = "/type")
 public class TypeController {
@@ -21,7 +22,6 @@ public class TypeController {
     @ApiOperation(value = "新增分类接口",notes = "直接调用类型的添加方法")
     @PostMapping
     public Result add(@RequestBody Type type) {
-
         typeService.add(type);
         return Result.success(type);
     }
@@ -36,7 +36,6 @@ public class TypeController {
     @ApiOperation(value = "更新分类接口",notes = "直接调用类型的更新方法")
     @PutMapping
     public Result update(@RequestBody Type type) {
-
         typeService.update(type);
         return Result.success();
     }

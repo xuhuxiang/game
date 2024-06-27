@@ -19,6 +19,7 @@ import java.util.Map;
 /**
  *  文件上传接口
  */
+@CrossOrigin(origins = {"http://114.55.219.66:8081", "null"})
 @RestController
 @RequestMapping("/files")
 public class FileController {

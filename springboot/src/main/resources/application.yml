@@ -1,10 +1,12 @@
+server.port : 8080
+
 # 数据库配置
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     username: root   #你本地的数据库用户名
-    password: xiang200212 #你本地的数据库密码
-    url: jdbc:mysql://localhost:3306/game?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false&serverTimezone=GMT%2b8&allowPublicKeyRetrieval=true
+    password: 123456 #你本地的数据库密码
+    url: jdbc:mysql://localhost/game?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false&serverTimezone=GMT%2b8&allowPublicKeyRetrieval=true
   main:
     allow-circular-references: true
   servlet:

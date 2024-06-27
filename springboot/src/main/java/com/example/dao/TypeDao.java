@@ -9,7 +9,5 @@ import java.util.List;
 
 @Repository
 public interface TypeDao extends Mapper<Type> {
-
 	List<Type> findBySearch(@Param("search") Type search);
-
 }
